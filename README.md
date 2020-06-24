@@ -26,7 +26,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Needed to defer the scripts so it would not run the js file until the whole html file is loaded
 ```
 
 ## Deliverable 2
@@ -35,7 +35,8 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+Accessed the header element found
+Used header.style.color = 'red' to change color of font
 ```
 
 ## Deliverable 3
@@ -57,7 +58,13 @@ Create a DOM element that looks like this for each player and append it to the `
 
 **YOUR NOTES**
 ```
-
+1. Find player container with querySelector, save to variable
+2. Run a forEach on the player container and pass in a new function that creates the player object with html data
+3. create function that passes in the player instance: 
+  - create new div element, save to variable
+  - add class to that element
+  - set innerHTML of that variable to whatever html structure you want
+  - append that detail(saved in variable) to the player container
 ```
 
 ## Deliverable 4
@@ -68,5 +75,6 @@ Hint: You can use `querySelector` with [CSS Attribute Selectors](https://develop
 
 **YOUR NOTES**
 ```
-
+User querySelector to search for "[data-number='7']", save to variable
+Call variable.remove() to remove from page
 ```
